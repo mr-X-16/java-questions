@@ -1,6 +1,7 @@
+import java.util.*;
 public class SinglyLinkedList {
 
-    // Node class
+    
     static class Node {
         int data;
         Node next;
@@ -11,17 +12,19 @@ public class SinglyLinkedList {
         }
     }
 
-    // Head of the list
+    
     Node head = null;
 
     // Insert at the front
+    
     public void insertAtFront(int data) {
-        Node newNode = new Node(data);  // create new node
-        newNode.next = head;            // point new node to current head
-        head = newNode;                 // move head to point to new node
+        Node newNode = new Node(data);  
+        newNode.next = head;            
+        head = newNode;                 
     }
 
     // Display the list
+    
     public void display() {
         Node current = head;
         System.out.print("Linked List: ");
@@ -33,6 +36,7 @@ public class SinglyLinkedList {
     }
 
     // Main method
+    
     public static void main(String[] args) {
         SinglyLinkedList list = new SinglyLinkedList();
 
@@ -40,7 +44,7 @@ public class SinglyLinkedList {
         list.insertAtFront(20);
         list.insertAtFront(10);
 
-        list.display();  // Output: 10 -> 20 -> 30 -> null
+        list.display();  
     }
 }
 
